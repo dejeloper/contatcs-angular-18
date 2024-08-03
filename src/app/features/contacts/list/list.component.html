@@ -1,7 +1,9 @@
 <section>
+  @if(data) {
   <app-grid
     [data]="data"
     [displayedColumns]="displayedColumns"
     [sortableColumns]="sortableColumns"
   />
+  }
 </section>
