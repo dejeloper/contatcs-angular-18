@@ -1,9 +1,7 @@
 <section>
-  @if(data) {
   <app-grid
-    [data]="data"
+    [data]="contacts()"
     [displayedColumns]="displayedColumns"
     [sortableColumns]="sortableColumns"
   />
-  }
 </section>
