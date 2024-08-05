@@ -33,7 +33,7 @@ const MATERIAL_MODULES = [
   standalone: true,
   imports: [FilterComponent, MATERIAL_MODULES],
   templateUrl: './grid.component.html',
-  styles: ``,
+  styleUrl: './grid.component.css',
 })
 export class GridComponent<T> implements OnInit {
   displayedColumns = input.required<string[]>();
@@ -72,6 +72,10 @@ export class GridComponent<T> implements OnInit {
 
   openEditForm(data: T): void {
     this._modalSvc.openModal<ModalComponent, T>(ModalComponent, data, true);
+  }
+
+  selectRow(data: T): void {
+    this.openEditForm(data);
   }
 
   deleteContact(id: string): void {

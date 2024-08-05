@@ -5,15 +5,16 @@ import { ToolbarComponent } from '@components/toolbar/toolbar.component';
 import { MatCardModule } from '@angular/material/card';
 import { ModalService } from '@components/modal/modal.service';
 import { ModalComponent } from '@components/modal/modal.component';
-import { Contact } from '@features/contacts/contacts.interface';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 
-const MATERIAL_MODULES = [MatCardModule];
+const MATERIAL_MODULES = [MatCardModule, MatProgressSpinnerModule];
 
 @Component({
   selector: 'app-root',
   standalone: true,
   imports: [CommonModule, RouterOutlet, ToolbarComponent, MATERIAL_MODULES],
   templateUrl: './app.component.html',
+  styleUrl: './app.component.css',
 })
 export class AppComponent {
   title = 'Demo Angular';
