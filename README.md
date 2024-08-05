@@ -1,6 +1,6 @@
 # Contacts Angular 18
 
-Este proyecto fue creado para hacer pruebas de implemntación sobre Angular 18 y sus caracteristicas recientes como señales.
+Este proyecto fue creado para hacer pruebas de implementación sobre Angular 18 y sus características recientes como señales.
 
 ## Desarrollado con:
 
@@ -14,7 +14,7 @@ Este proyecto fue creado para hacer pruebas de implemntación sobre Angular 18 y
 
 ## Ambiente de desarrollo
 
-- Ejecute `pnpm install` para instalar las dependecias
+- Ejecute `pnpm install` para instalar las dependencias.
 - Ejecute `ng serve` para un servidor de desarrollo.
 - El sitio se levantará en la ruta `http://localhost:4200/`.
 
